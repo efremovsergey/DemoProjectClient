@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView style="@style/WizardPageTitleAlert"
+        android:text="Информация"
+        android:id="@+id/login_title"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textSize="10pt"
+        android:layout_marginBottom="30dp"
+        android:text="Данные карты"/>
+
+    <View android:id="@+id/divider2"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.domoffon.efremov.domoffon.StoryActivity">
+
+    <TextView style="@style/WizardPageTitle"
+        android:id="@+id/login_title"/>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ExpandableListView
+            android:id="@+id/shop_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indicatorLeft="250dp"
+            android:indicatorRight="300dp"
+            android:layout_below="@+id/appBarLayout"
+            android:layout_above="@+id/tabLayout">
+
+        </ExpandableListView>
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

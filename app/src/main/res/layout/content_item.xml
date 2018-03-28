@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.domoffon.efremov.domoffon.ItemActivity"
+    tools:showIn="@layout/activity_item">
+
+    <TableLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:src="@drawable/banana" />
+            <TextView
+                android:id="@+id/item_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:text="Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара."
+                />
+        </LinearLayout>
+        <View android:id="@+id/divider"
+            android:background="?android:attr/dividerHorizontal"
+            android:layout_marginTop="@dimen/step_pager_tab_width"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+        <SeekBar
+            android:id="@+id/seekBarCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество"
+                android:textSize="18dp" />
+            <EditText
+                android:id="@+id/editTextCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1" />
+        </LinearLayout>
+        <View android:id="@+id/divider1"
+            android:layout_marginTop="@dimen/step_pager_tab_width"
+            android:background="?android:attr/dividerHorizontal"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+        <LinearLayout
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цена 15 руб./шт."
+                android:textSize="18dp" />
+            <TextView
+                android:id="@+id/textViewCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Всего 15 шт."
+                android:textSize="18dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стоимость - "
+            android:textColor="#000"
+            android:textSize="25dp" />
+    </TableLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="499dp">
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:text="В корзину" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

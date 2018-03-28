@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView style="@style/WizardPageTitle"
+        android:id="@+id/login_title"/>
+
+    <ScrollView
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:layout_width="match_parent"
+        android:layout_weight="0.53"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:src="@drawable/banana" />
+
+            <TextView
+                android:id="@+id/item_des"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".50"
+                android:text="Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара.Тут описание товара." />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/step_pager_tab_width"
+            android:background="?android:attr/dividerHorizontal" />
+
+        <SeekBar
+            android:id="@+id/seekBarCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/editTextCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="1" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/step_pager_tab_width"
+            android:background="?android:attr/dividerHorizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Цена"
+                    android:textSize="18dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Всего"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Доставка"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/textViewCostConst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Стоимость - "
+                android:textColor="#000"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+            <View android:id="@+id/divider3"
+                android:background="?android:attr/dividerHorizontal"
+                android:layout_height="match_parent"
+                android:layout_width="5dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight=".3"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15 руб. шт."
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textViewCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15 шт."
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/costOfD"
+                    android:layout_width="match_parent"
+                    android:text="500 руб."
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/textViewCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="0 руб."
+                    android:textSize="25dp"
+                    />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View android:id="@+id/divider2"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_pay"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:text="@string/p_ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

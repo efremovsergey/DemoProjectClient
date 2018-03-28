@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView style="@style/WizardPageTitleAlert"
+        android:text="@string/p_title"
+        android:id="@+id/login_title"/>
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/p_nal"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/p_dos"
+            android:layout_weight="1"
+            android:checked="true" />
+    </RadioGroup>
+
+    <View android:id="@+id/divider2"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+
+    <TextView
+        style="@style/WizardPageTitleAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p_cost" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="64dp">
+
+        <Button
+            android:id="@+id/back_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:text="@string/reg_prev" />
+
+        <Button
+            android:id="@+id/pay_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selectable_item_background"
+            android:text="@string/p_ok" />
+
+    </LinearLayout>
+
+</LinearLayout>
